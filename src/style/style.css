@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Gemunu+Libre:wght@300;400&family=Poppins:ital,wght@0,300;0,400;1,300&family=Quicksand:wght@300;400;500;600&family=Rubik:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+    --Navbar-color:rgba(0, 0, 0, 0.2);
+    --Footer-color:#546811;
+    --Footer-fontColor:#ffffff;
+}
+*, body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background-color: var(--Navbar-color);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+}
+.navbar .logo {
+    display: flex;
+    color: green;
+    align-items: center;
+} 
+.navbar .links {
+    display: flex;
+    list-style: none;
+}
+.navbar .links li a{
+    margin-left: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: green;
+}
+/* Content */
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    align-items: center;
+}
+.home .textHome {
+    width: 45%;
+}
+.home .gambarHome {
+    width: 45%;
+    align-items: center;
+}
+.btn {
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Footer-color);
+    color: var(--Footer-fontColor);
+}
+/* Footer */
+footer {
+    display: flex;
+    padding: 0px 60px;
+    height: 150px;
+    background-color: var(--Footer-color);
+    justify-content: space-between;
+    padding-top: 20px;
+    color: var(--Footer-fontColor);
+}
+footer .logo {
+    display: flex;
+    width: 50%;
+}
+footer .logo img {
+    width: 90px;
+    height: 80px;
+}
+footer .sidemap {
+    width: 25%;
+}
+footer .sidemap .sidemaps {
+    display: flex;
+}
+footer .sidemap .sidemaps h4 {
+    margin-right: 20px;
+}
+footer .connect {
+    width: 22%;
+}
+footer .connect .connects {
+    display: flex;
+}
+footer .connect .connects h4 {
+    margin-right: 20px;
+}
