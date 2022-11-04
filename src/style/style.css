@@ -1,99 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Gemunu+Libre:wght@300;400&family=Poppins:ital,wght@0,300;0,400;1,300&family=Quicksand:wght@300;400;500;600&family=Rubik:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Gemunu+Libre:wght@300;400&family=Nunito:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;1,300&family=Quicksand:wght@300;400;500;600&family=Rubik:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-    --Navbar-color:rgba(0, 0, 0, 0.2);
-    --Footer-color:#546811;
-    --Footer-fontColor:#ffffff;
+* {
+    font-family: 'Quicksand', sans-serif;
 }
-*, body, html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-60 backdrop-blur-sm;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+}
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-black;
 }
 
-/* Header */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 60px;
-    background-color: var(--Navbar-color);
-    width: 100%;
-    height: 70px;
-    align-items: center;
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45;
 }
-.navbar .logo {
-    display: flex;
-    color: green;
-    align-items: center;
-} 
-.navbar .links {
-    display: flex;
-    list-style: none;
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
 }
-.navbar .links li a{
-    margin-left: 40px;
-    font-size: 18px;
-    text-decoration: none;
-    color: green;
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
 }
-/* Content */
-.home {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 60px;
-    align-items: center;
+.nav-link {
+    @apply text-base text-black py-2 mx-8 my-14 hover:text-lime-700;
 }
-.home .textHome {
-    width: 45%;
+.card {
+    @apply shadow-xl px-2 py-2 lg:mb-[-50px] mb-2 rounded-md h-fit w-full mx-2;
 }
-.home .gambarHome {
-    width: 45%;
-    align-items: center;
+.card-img{
+    @apply flex items-center w-[100%] h-[84%] rounded-xl;
 }
-.btn {
-    width: 125px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    background-color: var(--Footer-color);
-    color: var(--Footer-fontColor);
-}
-/* Footer */
-footer {
-    display: flex;
-    padding: 0px 60px;
-    height: 150px;
-    background-color: var(--Footer-color);
-    justify-content: space-between;
-    padding-top: 20px;
-    color: var(--Footer-fontColor);
-}
-footer .logo {
-    display: flex;
-    width: 50%;
-}
-footer .logo img {
-    width: 90px;
-    height: 80px;
-}
-footer .sidemap {
-    width: 25%;
-}
-footer .sidemap .sidemaps {
-    display: flex;
-}
-footer .sidemap .sidemaps h4 {
-    margin-right: 20px;
-}
-footer .connect {
-    width: 22%;
-}
-footer .connect .connects {
-    display: flex;
-}
-footer .connect .connects h4 {
-    margin-right: 20px;
+.button-detail {
+    @apply hover:bg-green-800 w-20 bg-green-600 h-8 text-center items-center flex justify-center rounded-md text-white text-lg shadow-current;
 }
