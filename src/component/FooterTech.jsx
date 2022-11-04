@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../img/logo.png";
 import twitter from "../img/twitter.png";
 import facebook from "../img/facebook.png";
 import linkedin from "../img/linkedin.png";
