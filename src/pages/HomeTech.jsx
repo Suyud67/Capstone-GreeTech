@@ -1,27 +1,21 @@
-import React from "react";
-import Home from "../component/Home";
-import ItemTech from "../component/ItemTech";
-import About from "../component/About";
+import React from 'react';
+import ItemsTech from '../component/ItemsTech';
+import About from './About';
+import Home from '../component/Home';
 
 export default function HomeTech() {
   return (
     <>
-      <Home />
-      <div className="about mt-40">
-        <h1 className="text-center text-xl font-bold">About Us</h1>
-        <About />
+      <div className="h-auto px-10 pt-28 md:items-center lg:flex lg:items-center lg:justify-between lg:px-10">
+        <Home />
       </div>
+      <About />
       <div className="product px-10">
         <h1 className="py-0 text-center text-xl font-bold">Top Product</h1>
         <div className="md:grid-col-2 grid w-full lg:grid-cols-4">
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
-          <ItemTech />
+          <ItemsTech />
+          <ItemsTech />
+          <ItemsTech />
         </div>
       </div>
     </>
