@@ -1,5 +1,5 @@
 import React from "react";
-import gambar from "../img/imageAbout.png";
+import About from "../component/About";
 
 export default function AboutTech() {
   return (
