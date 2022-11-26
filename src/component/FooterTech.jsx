@@ -2,6 +2,7 @@ import React from "react";
 import twitter from "../img/twitter.png";
 import facebook from "../img/facebook.png";
 import linkedin from "../img/linkedin.png";
+import { Link } from "react-router-dom";
 
 export default function footerTech() {
   return (
@@ -11,19 +12,36 @@ export default function footerTech() {
           <div className="text">
             <h1 className="text-xl">GreeTech</h1>
             <p className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-              blanditiis saepe est vero esse! Reiciendis architecto doloremque.
+            GreeTech merupakan Website yang dapat membantu user mempromosikan tanaman mereka dan juga para user dapat berinteraksi 
+            dengan fitur diskusi.
             </p>
+            <br></br>
           </div>
         </div>
         <div className="flex items-center justify-between py-5 lg:w-2/4 lg:py-0">
           <div className="sidemap lg:mt-[-20px]">
             <h1 className="text-xl">Sidemap</h1>
             <div className="List lg:flex">
-              <h1 className="lg:mr-2">Home</h1>
-              <h1 className="lg:mr-2">Product</h1>
-              <h1 className="lg:mr-2">Contact</h1>
-              <h1 className="lg:mr-2">About</h1>
+              <h1 className="lg:mr-2">
+                <Link to="/">
+                  Home
+                </Link>
+              </h1>
+              <h1 className="lg:mr-2">
+                <Link to="/Product">
+                  Product
+                </Link>
+              </h1>
+              <h1 className="lg:mr-2">
+                <Link to="/Contact">
+                  Contact
+                </Link>
+              </h1>
+              <h1 className="lg:mr-2">
+              <Link to="/About">
+                  About
+                </Link>
+              </h1>
             </div>
           </div>
           <div className="connect ">
@@ -71,7 +89,7 @@ export default function footerTech() {
         </div>
       </div>
       <div className="copyright">
-        <span>&copy; 2022 Tim C22-065 SIB x Dicoding.com Bath 3</span>
+        <span>&copy; 2022 Tim C22-065 SIB x Dicoding.com Batch 3</span>
       </div>
     </div>
   );

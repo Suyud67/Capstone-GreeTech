@@ -6,6 +6,7 @@ import HomeTech from "../pages/HomeTech";
 import ProductTech from "../pages/ProductTech";
 import ContactTech from "../pages/ContactTech";
 import AboutTech from "../pages/AboutTech";
+import DetailTech from "../pages/DetailTech";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Product" element={<ProductTech />} />
           <Route path="/Contact" element={<ContactTech />} />
           <Route path="/About" element={<AboutTech />} />
+          <Route path="/Detail" element={<DetailTech />}/>
         </Routes>
       </main>
       <footer className="pt-5">
