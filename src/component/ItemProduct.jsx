@@ -1,17 +1,20 @@
 import React from 'react';
 import ButtonDetailTech from '../event/ButtonDetailTech';
-import product1 from '../img/product-2.png';
 
-function ItemProduct() {
+function ItemProduct({ plant }) {
   return (
-    <>
-      <img src={product1} alt="" className="card-img" />
-      <div className="date pt-2">24-10-2022</div>
-      <div className="title">Bunga</div>
-      <div className="btn my-2">
-        <ButtonDetailTech />
+    <div className="card">
+      <img src={plant.img_product} alt="" className="card-img" />
+      <div className="content-product m-4">
+        <div className="desc-product">
+          <h2 className="rounded-xl p-2 font-bold text-green-600">{plant.price_product}</h2>
+          <h2 className="title">{plant.name_product}</h2>
+        </div>
       </div>
-    </>
+      <div className="btn m-2">
+        <ButtonDetailTech id={plant._id}/>
+      </div>
+    </div>
   );
 }
 

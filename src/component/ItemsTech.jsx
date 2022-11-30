@@ -1,12 +1,12 @@
 import React from 'react';
 import ItemProduct from './ItemProduct';
 
-export default function ItemsTech() {
+export default function ItemsTech({ plants }) {
   return (
-    <div className="lg:flex lg:w-full lg:justify-between lg:py-10">
-      <div className="card">
-        <ItemProduct />
-      </div>
+    <div className="plant-items">
+      {plants.data.map((plant) => {
+        return <ItemProduct key={plant._id} plant={plant} />;
+      })}
     </div>
   );
 }

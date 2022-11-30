@@ -1,22 +1,17 @@
 import React from 'react';
-import ItemsTech from '../component/ItemsTech';
 import About from './About';
 import Home from '../component/Home';
+import plants from '../data/plants.json';
+import ItemsHomepage from '../component/ItemsHomepage';
 
 export default function HomeTech() {
   return (
     <>
-      <div className="h-auto px-10 pt-28 md:items-center lg:flex lg:items-center lg:justify-between lg:px-10">
-        <Home />
-      </div>
+      <Home />
       <About />
       <div className="product px-10">
-        <h1 className="py-0 text-center text-xl font-bold">Top Product</h1>
-        <div className="md:grid-col-2 grid w-full lg:grid-cols-4">
-          <ItemsTech />
-          <ItemsTech />
-          <ItemsTech />
-        </div>
+        <h1 className="mb-3 text-center text-xl font-bold">Top Product</h1>
+        <ItemsHomepage plants={plants} />
       </div>
     </>
   );
