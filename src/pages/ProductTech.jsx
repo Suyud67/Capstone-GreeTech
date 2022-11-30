@@ -1,17 +1,15 @@
 import React from 'react';
 import ItemsTech from '../component/ItemsTech';
+import BtnAddProduct from '../event/BtnAddProduct';
+import plants from '../data/plants.json';
 
 export default function ProductTech() {
   return (
-    <div className="pt-28">
+    <div className="relative mt-28">
       <h1 className="text-center text-xl font-bold">Product</h1>
-      <div className="item w-full px-10 lg:grid lg:grid-cols-4">
-        <ItemsTech />
-        <ItemsTech />
-        <ItemsTech />
-        <ItemsTech />
-        <ItemsTech />
-      </div>
+      <ItemsTech plants={plants} />
+
+      <BtnAddProduct />
     </div>
   );
 }

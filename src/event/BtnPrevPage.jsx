@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function BtnPrevPage() {
   return (
     <>
-      <Link to={'/Product'} className="ml-5">
+      <Link to={'/Products'} className="ml-5">
         <FaHome className="inline" /> Product
       </Link>
     </>

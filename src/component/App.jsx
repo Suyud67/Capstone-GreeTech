@@ -7,7 +7,9 @@ import ProductTech from '../pages/ProductTech';
 import ContactTech from '../pages/ContactTech';
 import About from '../pages/About';
 import DetailPage from '../pages/DetailPage';
+import AddProductPage from '../pages/AddProduct';
 
+// main component
 function App() {
   return (
     <div className="Note-app">
@@ -15,10 +17,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomeTech />} />
-          <Route path="/Product" element={<ProductTech />} />
-          <Route path="/Contact" element={<ContactTech />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Products" element={<ProductTech />} />
+          <Route path="/Contact" element={<ContactTech />} />
           <Route path="/Product/:id" element={<DetailPage />} />
+          <Route path="/Add" element={<AddProductPage />} />
         </Routes>
       </main>
       <footer className="pt-5">

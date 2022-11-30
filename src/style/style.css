@@ -4,34 +4,63 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-60 backdrop-blur-sm;
-    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+  @apply fixed z-[9999] bg-white bg-opacity-60 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 .hamburger-line {
-    @apply w-[30px] h-[2px] my-2 block bg-black;
+  @apply my-2 block h-[2px] w-[30px] bg-black;
 }
 
-.hamburger-active > span:nth-child(1){
-    @apply rotate-45;
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
 }
-.hamburger-active > span:nth-child(3){
-    @apply -rotate-45;
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
 }
-.hamburger-active > span:nth-child(2){
-    @apply scale-0;
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
 }
 .nav-link {
-    @apply text-base text-black py-2 mx-8 my-14 hover:text-lime-700;
+  @apply mx-8 my-14 py-2 text-base text-black hover:text-lime-700;
 }
 .card {
-    @apply shadow-xl px-2 py-2 lg:mb-[-50px] mb-2 rounded-md h-fit w-full mx-2;
+  @apply mx-2 mb-2 h-fit w-full rounded-md px-2 py-2 shadow-xl;
 }
-.card-img{
-    @apply flex items-center w-[100%] h-[84%] rounded-xl;
+.card-img {
+  @apply flex h-[84%] w-[100%] items-center rounded-xl;
 }
 .button-detail {
-    @apply hover:bg-green-800 w-20 bg-green-600 h-8 text-center items-center flex justify-center rounded-md text-white text-lg shadow-current;
+  @apply flex h-8 w-20 items-center justify-center rounded-md border-2 border-solid border-green-800 bg-none text-center text-lg  shadow-current hover:bg-green-800 hover:text-white;
+}
+
+.btn-add {
+  @apply absolute right-5 bottom-0 rounded-full text-xl shadow-xl;
+}
+
+.plant-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin-top: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+label {
+  color: #f6f6f6;
+}
+
+.form {
+  background-color: #334155;
 }

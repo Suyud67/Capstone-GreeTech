@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "_id": "3",
+      "user": "Ronal",
+      "name_product": "Philodendron billietiae variegata",
+      "desc_product": "Philodendron adalah sejenis tumbuhan dari suku Araceae, yang mempunyai banyak spesies. Namanya berasal dari bahasa Yunani, yaitu dari kata philo (\"cinta\") dan dendron (\"pohon\"). Karena keindahan bentuk dan warna-warni daunnya, Philodendron banyak disukai sebagai tanaman penghias ruangan atau taman.",
+      "price_product": "Rp 500.000",
+      "img_product": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "date_upload": "2022-07-14T04:27:34.572Z",
+      "_v": ""
+    },
+    {
+      "_id": "4",
+      "user": "Mahathir",
+      "name_product": "Syngonium chiapense variegata",
+      "desc_product": "Syngonium merupakan tanaman yang bentuk daunnya mirip seperti keladi. Daunnya yang sederhana, cantik serta hanya membutuhkan penyinaran matahari yang teduh, membuat tanaman ini cocok dijadikan sebagai tanaman indoor dan dapat mempercantik tampilan rumah kamu.",
+      "price_product": "Rp 3.500.000",
+      "img_product": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "date_upload": "2022-08-14T04:27:34.572Z",
+      "_v": ""
+    },
+    {
+      "_id": "5",
+      "user": "Yudi",
+      "name_product": "Sansevieria atau Lidah Mertua",
+      "desc_product": "Sansevieria atau lidah mertua adalah marga tanaman hias yang cukup populer sebagai penghias bagian dalam rumah karena tanaman ini dapat tumbuh dalam kondisi yang sedikit air dan cahaya matahari. Sansevieria memiliki daun keras, sukulen, tegak, dengan ujung meruncing.",
+      "price_product": "Rp 55.000",
+      "img_product": "https://images.unsplash.com/photo-1459156212016-c812468e2115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=405&q=80",
+      "date_upload": "2022-09-14T04:27:34.572Z",
+      "_v": ""
+    },
+    {
+      "_id": "1",
+      "user": "Udin",
+      "name_product": "Bunga Mawar Merah",
+      "desc_product": "Mawar atau ros adalah tumbuhan perdu, pohonnya berduri, bunganya berbau wangi dan berwarna indah, terdiri atas daun bunga yang bersusun; meliputi ratusan jenis, tumbuh tegak atau memanjat, batangnya berduri, bunganya beraneka warna, seperti merah, putih, merah jambu, merah tua, dan berbau harum. ",
+      "price_product": "Rp 15.000",
+      "img_product": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=474&q=80",
+      "date_upload": "2022-05-14T04:27:34.572Z",
+      "_v": ""
+    },
+    {
+      "_id": "2",
+      "user": "Suyud",
+      "name_product": "Tanaman Monstera",
+      "desc_product": "Monstera adalah genus dari 59 spesies tanaman berbunga dalam keluarga arum, Araceae, asli daerah tropis Amerika.",
+      "price_product": "Rp 100.000",
+      "img_product": "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "date_upload": "2022-06-14T04:27:34.572Z",
+      "_v": ""
+    },
+    {
+      "_id": "6",
+      "user": "Suyud",
+      "name_product": "Tanaman Monstera",
+      "desc_product": "Monstera adalah genus dari 59 spesies tanaman berbunga dalam keluarga arum, Araceae, asli daerah tropis Amerika.",
+      "price_product": "-",
+      "img_product": "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "date_upload": "2022-06-14T04:27:34.572Z",
+      "_v": ""
+    }
+  ]
+}
