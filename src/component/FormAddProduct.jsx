@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import { useState } from 'react';
 import ButtonSubmit from '../event/ButtonSubmit';
 import useInputHandle from '../utils/InputHook';
 
-export default function FormAddProduct() {
+export default function FormAddProduct({ addPlant }) {
   // set-up useState for input user
-  const [username, setUsername] = useInputHandle('');
-  const [plant, setPlant] = useInputHandle('');
-  const [description, setDescription] = useInputHandle('');
+  const [user, setUser] = useInputHandle('');
+  const [nm_product, setPlantProduct] = useInputHandle('');
+  const [price_product, setPrice] = useInputHandle('');
+  const [desc_product, setDescription] = useInputHandle('');
+  const [img_product, setImageProduct] = useState('');
 
   // event radio button
   const radioSellHandle = () => {
@@ -18,9 +20,14 @@ export default function FormAddProduct() {
     return (document.querySelector('.plant-price').style.display = 'none');
   };
 
+  // image upload handle
+  const eventImage = (e) => {
+    setImageProduct(e.target.files[0].name);
+  };
+
   const eventSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    addPlant({ user, nm_product, price_product, img_product, desc_product });
 
     e.target.reset();
   };
@@ -30,11 +37,11 @@ export default function FormAddProduct() {
       <form action="/product/add" method="post" onSubmit={eventSubmit}>
         <div className="username">
           <label htmlFor="username">Username</label>
-          <input type="text" name="user" onChange={setUsername} placeholder="input user name...." required />
+          <input type="text" name="user" onChange={setUser} placeholder="input user name...." required />
         </div>
         <div className="product">
           <label htmlFor="product">Plant Name</label>
-          <input type="text" name="nm_product" onChange={setPlant} placeholder="plant name...." required />
+          <input type="text" name="nm_product" onChange={setPlantProduct} placeholder="plant name...." required />
         </div>
         <div className="promotion-sell">
           <input type="radio" name="promotion-sell" className="w-5" id="promotion" onClick={radioPromotionHandle} defaultChecked />
@@ -46,13 +53,13 @@ export default function FormAddProduct() {
           <label htmlFor="plant-price" className="block">
             Plant Price
           </label>
-          <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-2/6" />
+          <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-2/6" onChange={setPrice} />
         </div>
         <div className="img-product">
           <label htmlFor="img-product" className="block">
             Product Image
           </label>
-          <input type="file" name="img_product" required className="w-2/6 cursor-pointer text-white" />
+          <input type="file" name="img_product" required className="w-2/6 cursor-pointer text-white" onChange={eventImage} />
         </div>
         <div className="desc-product">
           <label htmlFor="desc-product">Description Product</label>
