@@ -1,5 +1,5 @@
 import React from 'react';
-import homeImage from '../logo/Group 3 1.png';
+import homeImage from '../public/logo/Group 3 1.png';
 import ButtonTech from '../event/ButtonHomeTech';
 
 function Home() {

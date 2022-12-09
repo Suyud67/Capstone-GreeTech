@@ -3,31 +3,34 @@ import { useState } from 'react';
 import ButtonSubmit from '../event/ButtonSubmit';
 import useInputHandle from '../utils/InputHook';
 
-export default function FormAddProduct({ addPlant }) {
+export default function FormAddProduct({ newPlant }) {
   // set-up useState for input user
   const [user, setUser] = useInputHandle('');
   const [nm_product, setPlantProduct] = useInputHandle('');
   const [price_product, setPrice] = useInputHandle('');
   const [desc_product, setDescription] = useInputHandle('');
+  const [noHp_user, setNoHp] = useInputHandle('');
   const [img_product, setImageProduct] = useState('');
 
   // event radio button
   const radioSellHandle = () => {
-    return (document.querySelector('.plant-price').style.display = 'block');
+    document.querySelector('.plant-price').style.display = 'block';
+    document.querySelector('.noHp-user').style.display = 'block';
   };
 
   const radioPromotionHandle = () => {
-    return (document.querySelector('.plant-price').style.display = 'none');
+    document.querySelector('.plant-price').style.display = 'none';
+    document.querySelector('.noHp-user').style.display = 'none';
   };
 
   // image upload handle
   const eventImage = (e) => {
-    setImageProduct(e.target.files[0].name);
+    setImageProduct(e.target.files[0]);
   };
 
   const eventSubmit = (e) => {
     e.preventDefault();
-    addPlant({ user, nm_product, price_product, img_product, desc_product });
+    newPlant({ user, nm_product, price_product, img_product, desc_product, noHp_user });
 
     e.target.reset();
   };
@@ -55,11 +58,17 @@ export default function FormAddProduct({ addPlant }) {
           </label>
           <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-2/6" onChange={setPrice} />
         </div>
+        <div className="noHp-user hidden">
+          <label htmlFor="noHp-user" className="block">
+            Phone Number
+          </label>
+          <input type="number" name="noHp_user" placeholder="08..." id="noHp-user" className="w-2/6" onChange={setNoHp} />
+        </div>
         <div className="img-product">
           <label htmlFor="img-product" className="block">
             Product Image
           </label>
-          <input type="file" name="img_product" required className="w-2/6 cursor-pointer text-white" onChange={eventImage} />
+          <input type="file" name="img_product" required className="w-2/6 cursor-pointer text-white" onChange={eventImage} accept="image/*" />
         </div>
         <div className="desc-product">
           <label htmlFor="desc-product">Description Product</label>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerTech from '../event/HamburgerTech';
-import logo from '../img/logo.png';
+import logo from '../public/img/logo.png';
 
 export default function Navbar() {
   window.onscroll = () => {
