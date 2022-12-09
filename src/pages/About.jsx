@@ -1,5 +1,5 @@
 import React from 'react';
-import gambar from '../img/imageAbout.png';
+import gambar from '../public/img/imageAbout.png';
 
 export default function About() {
   return (

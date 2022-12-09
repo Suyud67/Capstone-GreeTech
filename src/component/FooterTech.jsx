@@ -4,7 +4,7 @@ import ConnectLinks from './Footer-ConnectLinks';
 
 export default function footerTech() {
   return (
-    <div className="box h-auto w-full bg-slate-700 px-10 pt-5 pb-2 text-white">
+    <div className="box relative bottom-0 left-0 right-0 h-auto w-full bg-slate-700 px-10 pt-5 pb-2 text-white">
       <div className="copyrigh  justify-between lg:flex">
         <div className="logo lg:w-2/5">
           <div className="text">

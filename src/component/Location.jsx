@@ -1,8 +1,8 @@
 import React from 'react';
-import maps from '../img/Peta.png';
-import location from '../img/point.png';
-import email from '../img/gmail.png';
-import whatsapp from '../img/whatsapp.png';
+import maps from '../public/img/Peta.png';
+import location from '../public/img/point.png';
+import email from '../public/img/gmail.png';
+import whatsapp from '../public/img/whatsapp.png';
 
 export default function Location() {
   return (

@@ -37,7 +37,7 @@
 }
 
 .btn-add {
-  @apply absolute right-5 bottom-0 rounded-full text-xl shadow-xl;
+  @apply absolute right-5 -bottom-10 rounded-full text-xl shadow-xl;
 }
 
 .plant-items {
@@ -45,7 +45,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-items: center;
-  margin-top: 1rem;
+  margin: 0 2rem;
   width: 90%;
   margin: auto;
 }
@@ -63,4 +63,9 @@ label {
 
 .form {
   background-color: #334155;
+}
+
+.product-container {
+  width: 100%;
+  margin: 10rem auto;
 }
