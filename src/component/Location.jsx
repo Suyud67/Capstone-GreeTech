@@ -7,7 +7,7 @@ import whatsapp from '../public/img/whatsapp.png';
 export default function Location() {
   return (
     <div className="maps">
-      <img src={maps} alt="maps" />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.956952477727!2d107.63166691474308!3d-6.895752595017205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7a55a776727%3A0x8e3f7a0d549bd0d6!2sJl.%20Batik%20Kumeli%20No.50%2C%20RW.12%2C%20Sukaluyu%2C%20Kec.%20Cibeunying%20Kaler%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040123!5e0!3m2!1sid!2sid!4v1670600925114!5m2!1sid!2sid" width="674" height="480" loading="lazy"></iframe>
       <div className="contact py-5">
         <div className="location mb-3 flex items-center">
           <img src={location} alt="location" className="h-10 w-10" />
