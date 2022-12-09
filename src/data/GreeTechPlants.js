@@ -1,5 +1,4 @@
 const BASE_URL = 'https://be-greetech.onrender.com';
-// const TEST_URL = 'http://localhost:5000';
 
 const getAllPlant = async () => {
   const response = await fetch(`${BASE_URL}/products`);

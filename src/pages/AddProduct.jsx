@@ -10,7 +10,7 @@ export default function AddProductPage() {
   const handleAddPlant = async (plant) => {
     const { error, message } = await addPlant(plant);
     if (error) {
-      window.alert(message || message.msg);
+      window.alert(message);
     } else {
       window.alert(message);
       navigate('/Products');

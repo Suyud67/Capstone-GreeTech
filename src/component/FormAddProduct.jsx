@@ -15,12 +15,10 @@ export default function FormAddProduct({ newPlant }) {
   // event radio button
   const radioSellHandle = () => {
     document.querySelector('.plant-price').style.display = 'block';
-    document.querySelector('.noHp-user').style.display = 'block';
   };
 
   const radioPromotionHandle = () => {
     document.querySelector('.plant-price').style.display = 'none';
-    document.querySelector('.noHp-user').style.display = 'none';
   };
 
   // image upload handle
@@ -58,11 +56,11 @@ export default function FormAddProduct({ newPlant }) {
           </label>
           <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-2/6" onChange={setPrice} />
         </div>
-        <div className="noHp-user hidden">
+        <div className="noHp-user">
           <label htmlFor="noHp-user" className="block">
             Phone Number
           </label>
-          <input type="number" name="noHp_user" placeholder="08..." id="noHp-user" className="w-2/6" onChange={setNoHp} />
+          <input type="number" name="noHp_user" placeholder="08..." id="noHp-user" className="w-2/6" onChange={setNoHp} required />
         </div>
         <div className="img-product">
           <label htmlFor="img-product" className="block">
