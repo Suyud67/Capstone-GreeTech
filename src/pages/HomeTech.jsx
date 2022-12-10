@@ -27,6 +27,7 @@ export default function HomeTech() {
         <Home />
         <About />
         <div className="product px-10">
+          <h1 className="mb-3 text-center text-xl font-bold">Top Product</h1>
           <img src={loadingGif} alt="" className="m-auto" />
         </div>
       </>

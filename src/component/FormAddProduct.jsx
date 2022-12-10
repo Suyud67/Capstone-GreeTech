@@ -34,7 +34,7 @@ export default function FormAddProduct({ newPlant }) {
   };
 
   return (
-    <div className="form m-auto w-3/5 rounded-xl p-5">
+    <div className="form m-auto w-11/12 rounded-xl p-5 md:w-3/5">
       <form action="/product/add" method="post" onSubmit={eventSubmit}>
         <div className="username">
           <label htmlFor="username">Username</label>
@@ -54,19 +54,19 @@ export default function FormAddProduct({ newPlant }) {
           <label htmlFor="plant-price" className="block">
             Plant Price
           </label>
-          <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-2/6" onChange={setPrice} />
+          <input type="number" name="price_product" placeholder="plant price...." id="plant-price" className="w-3/6" onChange={setPrice} />
         </div>
         <div className="noHp-user">
           <label htmlFor="noHp-user" className="block">
             Phone Number
           </label>
-          <input type="number" name="noHp_user" placeholder="08..." id="noHp-user" className="w-2/6" onChange={setNoHp} required />
+          <input type="number" name="noHp_user" placeholder="08..." id="noHp-user" className="w-3/6" onChange={setNoHp} required />
         </div>
         <div className="img-product">
           <label htmlFor="img-product" className="block">
             Product Image
           </label>
-          <input type="file" name="img_product" required className="w-2/6 cursor-pointer text-white" onChange={eventImage} accept="image/*" />
+          <input type="file" name="img_product" required className="w-5/6 cursor-pointer text-white md:w-3/6" onChange={eventImage} accept="image/*" />
         </div>
         <div className="desc-product">
           <label htmlFor="desc-product">Description Product</label>
