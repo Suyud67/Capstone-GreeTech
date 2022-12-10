@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function SideMap() {
   return (
-    <div className="List lg:flex">
-      <Link to={'/'} className="lg:mr-2">
+    <div className="List flex flex-col gap-3 md:flex-row">
+      <Link to={'/'} className="link-item">
         Home
       </Link>
-      <Link to={'/About'} className="lg:mr-2">
+      <Link to={'/About'} className="link-item">
         About
       </Link>
-      <Link to={'/Product'} className="lg:mr-2">
+      <Link to={'/Products'} className="link-item">
         Product
       </Link>
-      <Link to={'/Contact'} className="lg:mr-2">
+      <Link to={'/Contact'} className="link-item">
         Contact
       </Link>
     </div>

@@ -37,7 +37,7 @@
 }
 
 .btn-add {
-  @apply absolute right-5 -bottom-10 rounded-full text-xl shadow-xl;
+  @apply absolute -bottom-24 right-5 rounded-full text-xl shadow-xl;
 }
 
 .plant-items {
@@ -67,5 +67,6 @@ label {
 
 .product-container {
   width: 100%;
-  margin: 10rem auto;
+  margin-top: 7rem;
+  margin-bottom: 13rem;
 }

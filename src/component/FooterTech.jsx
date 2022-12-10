@@ -12,7 +12,7 @@ export default function footerTech() {
             <p>GreeTech merupakan Website yang dapat membantu user mempromosikan tanaman mereka atau membagikan tips dan trik dalam bercocok tanam.</p>
           </div>
         </div>
-        <div className="flex items-center justify-between py-5 lg:w-2/4 lg:py-0">
+        <div className="flex items-center justify-between py-5">
           <div className="sidemap lg:mt-[-20px]">
             <h1 className="text-xl">Sidemap</h1>
             <SideMap />
